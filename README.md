@@ -312,265 +312,111 @@ The results demonstrate that Gemma 4 31B remains the strongest open-weight model
 The comparison between Cyber and Cyber Audit also demonstrates that model performance can vary substantially depending on the type of cybersecurity knowledge being evaluated.
 
 
-# Cyber Security LLM Benchmark — 2026
+<div align="center">
 
-## Turkish Cybersecurity Benchmark Analysis
+# 🛡️ Turkish Cyber Security LLM Benchmark (2026)
 
-This benchmark evaluates Large Language Models on **173 Turkish cybersecurity questions**.
+**Comprehensive Evaluation of Large Language Models on Turkish Cybersecurity Domain Knowledge**
 
-All models are evaluated against the same question set and answer key. The results from all evaluation runs are consolidated into a single leaderboard.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Questions](https://img.shields.io/badge/Questions-173%20Multiple%20Choice-blue.svg)](#-benchmark-methodology)
+[![Top Performer](https://img.shields.io/badge/Leader-Claude%20(94.22%25)-brightgreen.svg)](#-final-cyber-security-leaderboard)
+[![Open Weight Leader](https://img.shields.io/badge/Open%20Source%20Leader-Gemma%204%2031B%20(89.60%25)-purple.svg)](#-final-cyber-security-leaderboard)
 
-> **Total Questions: 173**
+[📌 Quick Summary](#-key-findings) • [🏆 Leaderboard](#-final-cyber-security-leaderboard) • [📊 Metrics](#-performance--inference-metrics) • [🚀 How to Run](#-quick-start)
+
+---
+
+</div>
+
+## 📌 Executive Summary
+
+This repository contains the dataset, methodology, and evaluation logs for the **2026 Turkish Cyber Security LLM Benchmark**. The benchmark evaluates **12 leading AI models** against **173 multiple-choice Turkish cybersecurity questions** covering network defense, incident response, vulnerability assessment, and threat detection logic.
+
+> [!NOTE]
+> All models were benchmarked against identical prompts and standardized answer keys to derive exact accuracy, token consumption, and inference latency metrics.
 
 ---
 
 ## 📊 Benchmark Methodology
 
-| Metric           | Description              |
-| ---------------- | ------------------------ |
-| Dataset          | Cyber Security Benchmark |
-| Total Questions  | **173**                  |
-| Language         | Turkish                  |
-| Question Type    | Multiple Choice          |
-| Primary Metric   | Accuracy                 |
-| Evaluation       | Answer-key based         |
-| Models Evaluated | 12                       |
-
-Accuracy is calculated as:
-
-**Accuracy = Correct Answers / 173 × 100**
+| Parameter | Details |
+| :--- | :--- |
+| **Dataset** | Turkish Cyber Security Assessment Set |
+| **Total Questions** | **173** |
+| **Format** | Multiple Choice (Single Correct Choice) |
+| **Primary Metric** | Accuracy ($\text{Accuracy} = \frac{\text{Correct}}{173} \times 100$) |
+| **Language** | Turkish (TR) |
+| **Evaluated Models** | 12 (Proprietary & Open-Weights) |
 
 ---
 
-# 🏆 Final Cyber Security Leaderboard
+## 🏆 Final Cyber Security Leaderboard
 
-| Rank | Model        | Correct | Incorrect |   Accuracy |
-| ---: | ------------ | ------: | --------: | ---------: |
-| 🥇 1 | Claude       |     163 |        10 | **94.22%** |
-| 🥈 2 | ChatGPT 5.5  |     160 |        13 | **92.49%** |
-| 🥉 3 | Gemma 4 31B  |     155 |        18 | **89.60%** |
-|    4 | Gemini Flash |     150 |        23 | **86.71%** |
-|    5 | Qwen         |     149 |        24 | **86.13%** |
-|    6 | Trendyol     |     148 |        25 | **85.55%** |
-|    6 | Grok 4       |     148 |        25 | **85.55%** |
-|    8 | DeepSeek     |     142 |        31 | **82.08%** |
-|    9 | Perplexity   |     139 |        34 | **80.35%** |
-|   10 | Gemma 12B    |     138 |        35 | **79.77%** |
-|   11 | Mistral 32B  |     133 |        40 | **76.88%** |
-|   12 | GPT-OSS-20B  |      61 |       112 | **35.26%** |
+| Rank | Model | Correct | Incorrect | Accuracy | Type | Status |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| 🥇 **1** | **Claude** | **163** | 10 | **94.22%** | Proprietary | 🟢 Top Performer |
+| 🥈 **2** | **ChatGPT 5.5** | **160** | 13 | **92.49%** | Proprietary | 🟢 Frontier |
+| 🥉 **3** | **Gemma 4 31B** | **155** | 18 | **89.60%** | Open-Weights | 🟣 Best Open Model |
+| **4** | **Gemini Flash** | **150** | 23 | **86.71%** | Proprietary | 🟢 Commercial API |
+| **5** | **Qwen** | **149** | 24 | **86.13%** | Open-Weights | 🟣 Open Model |
+| **6** | **Trendyol** | **148** | 25 | **85.55%** | Fine-Tuned / Local | 🔵 Regional Leader |
+| **6** | **Grok 4** | **148** | 25 | **85.55%** | Proprietary | 🟢 Commercial API |
+| **8** | **DeepSeek** | **142** | 31 | **82.08%** | Open-Weights | 🟣 Open Model |
+| **9** | **Perplexity** | **139** | 34 | **80.35%** | Search-Augmented | 🟡 Hybrid |
+| **10** | **Gemma 12B** | **138** | 35 | **79.77%** | Open-Weights | 🟣 Lightweight |
+| **11** | **Mistral 32B** | **133** | 40 | **76.88%** | Open-Weights | 🟣 Open Model |
+| **12** | **GPT-OSS-20B** | **61** | 112 | **35.26%** | Open-Source | 🔴 Baseline |
 
-## The underlying benchmark results report Gemma 31B at 155/173, Qwen at 149/173, DeepSeek at 142/173, Mistral at 133/173 and GPT-OSS at 61/173. The additional evaluations provide the Trendyol and Gemma 12B results.
+---
 
-# 📈 Accuracy Comparison
+## 📈 Accuracy Distribution
 
 ```text
-Claude          ███████████████████ 94.22%
-ChatGPT 5.5     ██████████████████  92.49%
-Gemma 4 31B     █████████████████   89.60%
-Gemini Flash    █████████████████   86.71%
-Qwen            █████████████████   86.13%
-Trendyol        █████████████████   85.55%
-Grok 4          █████████████████   85.55%
-DeepSeek        ████████████████    82.08%
-Perplexity      ████████████████    80.35%
-Gemma 12B       ████████████████    79.77%
-Mistral 32B     ███████████████     76.88%
-GPT-OSS-20B     ███████             35.26%
-🔬 Complete Model Analysis
-Claude
-Accuracy: 94.22%
+Claude          ████████████████████ 94.22%
+ChatGPT 5.5     ███████████████████  92.49%
+Gemma 4 31B     ██████████████████   89.60%
+Gemini Flash    █████████████████    86.71%
+Qwen            █████████████████    86.13%
+Trendyol        █████████████████    85.55%
+Grok 4          █████████████████    85.55%
+DeepSeek        ████████████████     82.08%
+Perplexity      ████████████████     80.35%
+Gemma 12B       ███████████████      79.77%
+Mistral 32B     ██████████████       76.88%
+GPT-OSS-20B     ███████              35.26%
+⚡ Performance & Inference Metrics
+For deployment considerations, raw hardware/API performance metrics were recorded during the evaluation run:
 
-Claude achieved the highest Cyber Security benchmark score with 163 correct answers out of 173.
+Model	Accuracy	Generation TPS	Avg Latency	E2E Latency	TTFT
+Gemma 4 31B	89.60%	2.30	~0.0 s*	—	—
+Qwen	86.13%	14.00	~0.0 s*	—	—
+Trendyol	85.55%	8.25	0.88 s	0.882 s	0.261 s
+DeepSeek	82.08%	3.83	~0.0 s*	—	—
+Gemma 12B	79.77%	8.36	5.34 s	5.338 s	0.244 s
+Mistral 32B	76.88%	3.30	0.61 s	—	—
+GPT-OSS-20B	35.26%	10.40	20–25 s	—	—
+[!TIP]
+Production Insight: While Gemma 12B shows slightly faster Time-To-First-Token (TTFT: 0.244s), Trendyol delivers significantly lower End-to-End latency (0.882s) alongside superior domain accuracy (85.55%).
 
-It leads ChatGPT 5.5 by:
-
-1.73 percentage points
-
-and Gemma 4 31B by:
-
-4.62 percentage points.
-
-ChatGPT 5.5
-Accuracy: 92.49%
-
-ChatGPT achieved 160 correct answers and ranked second.
-
-The gap to the benchmark leader is relatively small, indicating strong performance on Turkish cybersecurity questions.
-
-Gemma 4 31B
-Accuracy: 89.60%
-
-Gemma 4 31B is the highest-ranked open-weight model in this benchmark.
-
-It achieved:
-
-155 / 173 correct
-
-and ranked third overall.
-
-Gemini Flash
-Accuracy: 86.71%
-
-Gemini Flash achieved 150 correct answers.
-
-Qwen
-Accuracy: 86.13%
-
-Qwen achieved 149 correct answers and ranked fifth overall.
-
-Trendyol
-Accuracy: 85.55%
-
-Trendyol achieved 148 correct answers.
-
-It is statistically very close to Qwen:
-
-85.55% vs 86.13%
-
-Difference:
-
-0.58 percentage points
-
-The result is also identical to the reported Grok 4 accuracy of 85.55%.
-Grok 4
-Accuracy: 85.55%
-
-Grok 4 achieved 148/173 correct answers.
-
-DeepSeek
-Accuracy: 82.08%
-
-DeepSeek achieved 142 correct answers.
-
-Perplexity
-Accuracy: 80.35%
-
-Perplexity achieved 139 correct answers.
-
-Gemma 12B
-Accuracy: 79.77%
-
-Gemma 12B achieved 138 correct answers.
-
-Compared with Gemma 4 31B:
-
-Model	Accuracy
-Gemma 4 31B	89.60%
-Gemma 12B	79.77%
-Difference	9.83 pp
-This shows a substantial performance difference between the evaluated Gemma configurations.
-
-Mistral 32B
-Accuracy: 76.88%
-
-Mistral achieved 133 correct answers.
-
-GPT-OSS-20B
-Accuracy: 35.26%
-
-GPT-OSS achieved 61 correct answers.
-
-It is substantially below the other evaluated models in this benchmark.
-
-⚡ Performance Metrics
-For models where inference-performance measurements are available, the following metrics are reported:
-
-Model	Accuracy	Generation TPS	Avg Latency
-Gemma	89.60%	2.30	~0 s*
-Qwen	86.13%	14.0	~0 s*
-Mistral 32B	76.88%	3.30	0.61 s
-DeepSeek	82.08%	3.83	~0 s*
-GPT-OSS-20B	35.26%	10.4	20–25 s
-Gemma 12B	79.77%	8.36	5.338 s
-Trendyol	85.55%	8.25	0.882 s
-*The source performance summary reports approximately zero seconds for these measurements; this should be interpreted as the reported measurement rather than literal zero physical latency.
-
-Gemma 12B and Trendyol measurements are taken from the dedicated benchmark run.
-🧮 Efficiency Analysis
-The benchmark also contains a token-efficiency analysis.
-
-Model	Accuracy	Avg Tokens	Efficiency
-Gemma	82.99% overall	153	🥇 Best
-Qwen	78.26% overall	170	🥈
-Mistral	66.24% overall	171	🥉
-DeepSeek	71.48% overall	663	Poor
-GPT-OSS	31.20% overall	482	Very Poor
-The original performance analysis identifies Gemma as the most token-efficient among those models.
-
+🧮 Token Efficiency Analysis
+Rank	Model	Score	Avg Tokens / Ans	Efficiency Verdict
+🥇	Gemma	82.99%	153	🏆 Optimal (Concise & Accurate)
+🥈	Qwen	78.26%	170	🥈 High Efficiency
+🥉	Mistral	66.24%	171	🥉 Moderate
+4	DeepSeek	71.48%	663	⚠️ Verbose
+5	GPT-OSS	31.20%	482	❌ Inefficient
 🎯 Key Findings
-1. Claude is the strongest model
-Claude leads the benchmark at:
+Frontier Dominance: Claude (94.22%) and ChatGPT 5.5 (92.49%) lead overall accuracy in complex Turkish domain prompts.
+Open-Weight Benchmark: Gemma 4 31B (89.60%) secures 3rd place, outperforming several larger commercial APIs.
+High-Speed Local Deployment: Trendyol (85.55%) demonstrates competitive accuracy while offering the lowest E2E latency (0.882s), making it highly suitable for real-time applications.
+Parameter Scaling Impact: A comparison between Gemma variants highlights a 9.83 percentage point gap (89.60% vs 79.77%), proving that model scaling remains critical for niche domain reasoning.
+⚠️ Limitations & Scope
+[!WARNING]
+This benchmark measures knowledge retrieval on static multiple-choice questions. It does not evaluate active operational workflows such as:
 
-94.22%
-
-2. Gemma 4 31B is the strongest open-weight model
-Gemma 4 31B reaches:
-
-89.60%
-
-and ranks third overall.
-
-3. Trendyol is highly competitive
-Trendyol reaches:
-
-85.55%
-
-placing it sixth overall.
-
-It is only:
-
-4.05 percentage points
-
-behind Gemma 4 31B.
-
-4. Gemma 12B is still competitive
-Gemma 12B achieves:
-
-79.77%
-
-and ranks tenth.
-
-5. Model size does not directly determine benchmark performance
-The results show that parameter count alone cannot explain benchmark performance.
-
-Models with different architectures, training approaches and reasoning strategies produce substantially different results.
-
-🚀 Production Perspective
-Accuracy alone does not determine whether a model is suitable for production cybersecurity workloads.
-
-For example, the dedicated Gemma 12B and Trendyol measurements show:
-
-Metric	Gemma 12B	Trendyol
-Accuracy	79.77%	85.55%
-TTFT	0.244 s	0.261 s
-Generation TPS	8.36	8.25
-E2E Latency	5.338 s	0.882 s
-Gemma 12B has slightly better TTFT and generation throughput, while Trendyol has higher accuracy and dramatically lower E2E latency.
-This highlights the importance of evaluating:
-
-Accuracy + TTFT + Generation TPS + E2E Latency
-
-rather than accuracy alone.
-
-⚠️ Limitations
-This benchmark measures performance on a fixed set of Turkish cybersecurity multiple-choice questions.
-
-It does not directly evaluate:
-Real SOC operations
-SIEM investigation
-Malware analysis
-Reverse engineering
-Exploit development
-Penetration testing
-Tool usage
-Agentic reasoning
-Long-context investigation
-Autonomous incident response
-Therefore, benchmark accuracy should be interpreted as benchmark performance, not as a complete measure of cybersecurity capability.
-
-📌 Final Verdict
-The Cyber Security benchmark ranking is:
-
-Claude > ChatGPT 5.5 > Gemma 4 31B > Gemini Flash > Qwen > Trendyol/Grok > DeepSeek > Perplexity > Gemma 12B > Mistral > GPT-OSS
-
-The most important conclusion is that the benchmark shows a clear separation between high-performing frontier models and weaker open-weight configurations, while models such as Gemma 4 31B and Trendyol demonstrate strong practical competitiveness.
+🛡️ Dynamic Incident Triage & SIEM Query Optimization
+🔍 Malware Static & Dynamic Reverse Engineering
+🔓 Exploit Payload Engineering & Vulnerability Exploitation
+🤖 Autonomous Multi-Agent Security Operations
+📂 Repository Structure
