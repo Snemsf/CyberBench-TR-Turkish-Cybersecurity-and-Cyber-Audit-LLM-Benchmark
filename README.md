@@ -312,22 +312,10 @@ The results demonstrate that Gemma 4 31B remains the strongest open-weight model
 The comparison between Cyber and Cyber Audit also demonstrates that model performance can vary substantially depending on the type of cybersecurity knowledge being evaluated.
 
 
-<div align="center">
-
 # 🛡️ Turkish Cyber Security LLM Benchmark (2026)
 
 **Comprehensive Evaluation of Large Language Models on Turkish Cybersecurity Domain Knowledge**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Questions](https://img.shields.io/badge/Questions-173%20Multiple%20Choice-blue.svg)](#-benchmark-methodology)
-[![Top Performer](https://img.shields.io/badge/Leader-Claude%20(94.22%25)-brightgreen.svg)](#-final-cyber-security-leaderboard)
-[![Open Weight Leader](https://img.shields.io/badge/Open%20Source%20Leader-Gemma%204%2031B%20(89.60%25)-purple.svg)](#-final-cyber-security-leaderboard)
-
-[📌 Quick Summary](#-key-findings) • [🏆 Leaderboard](#-final-cyber-security-leaderboard) • [📊 Metrics](#-performance--inference-metrics) • [🚀 How to Run](#-quick-start)
-
----
-
-</div>
 
 ## 📌 Executive Summary
 
