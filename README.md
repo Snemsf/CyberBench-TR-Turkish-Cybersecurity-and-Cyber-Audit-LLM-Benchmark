@@ -409,7 +409,7 @@ This benchmark measures knowledge retrieval on static multiple-choice questions.
 
 Disclaimer
 
-This study is an independent personal research project and reflects the performance of the evaluated models at a specific point in time (June 2026).
+This study is an independent personal research project and reflects the performance of the evaluated models at a specific point in time (August 2026).
 
 Results may vary depending on the prompts used, model versions, system configurations, inference settings, and testing environments. As AI models evolve rapidly, future performance may differ significantly from the results presented here.
 
