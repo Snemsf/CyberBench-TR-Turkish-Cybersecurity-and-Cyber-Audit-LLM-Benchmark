@@ -51,7 +51,7 @@ Accuracy:
 
 # 📈 Accuracy Comparison
 
-```text
+
 Claude          ██████████████████  88.18%
 ChatGPT 5.5     █████████████████   82.27%
 Gemma 4 31B     █████████████████   81.12%
@@ -360,7 +360,6 @@ This repository contains the dataset, methodology, and evaluation logs for the *
 
 ## 📈 Accuracy Distribution
 
-```text
 Claude          ████████████████████ 94.22%
 ChatGPT 5.5     ███████████████████  92.49%
 Gemma 4 31B     ██████████████████   89.60%
