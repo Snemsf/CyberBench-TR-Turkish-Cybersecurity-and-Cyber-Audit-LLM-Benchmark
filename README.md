@@ -406,3 +406,13 @@ This benchmark measures knowledge retrieval on static multiple-choice questions.
 🔍 Malware Static & Dynamic Reverse Engineering
 🔓 Exploit Payload Engineering & Vulnerability Exploitation
 🤖 Autonomous Multi-Agent Security Operations
+
+Disclaimer
+
+This study is an independent personal research project and reflects the performance of the evaluated models at a specific point in time (June 2026).
+
+Results may vary depending on the prompts used, model versions, system configurations, inference settings, and testing environments. As AI models evolve rapidly, future performance may differ significantly from the results presented here.
+
+The findings should not be interpreted as investment advice, a guarantee of accuracy, or an endorsement of any particular model, vendor, or product. The benchmark is intended solely for informational and educational purposes.
+
+Any decisions, implementations, or business activities undertaken based on these results are the sole responsibility of the reader or organization. The authors assume no liability for any direct or indirect consequences arising from the use or interpretation of this analysis.
