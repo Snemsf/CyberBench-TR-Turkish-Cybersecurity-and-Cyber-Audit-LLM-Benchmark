@@ -360,6 +360,7 @@ This repository contains the dataset, methodology, and evaluation logs for the *
 
 ## 📈 Accuracy Distribution
 
+```text
 Claude          ████████████████████ 94.22%
 ChatGPT 5.5     ███████████████████  92.49%
 Gemma 4 31B     ██████████████████   89.60%
@@ -401,9 +402,7 @@ Parameter Scaling Impact: A comparison between Gemma variants highlights a 9.83 
 ⚠️ Limitations & Scope
 [!WARNING]
 This benchmark measures knowledge retrieval on static multiple-choice questions. It does not evaluate active operational workflows such as:
-
 🛡️ Dynamic Incident Triage & SIEM Query Optimization
 🔍 Malware Static & Dynamic Reverse Engineering
 🔓 Exploit Payload Engineering & Vulnerability Exploitation
 🤖 Autonomous Multi-Agent Security Operations
-📂 Repository Structure
